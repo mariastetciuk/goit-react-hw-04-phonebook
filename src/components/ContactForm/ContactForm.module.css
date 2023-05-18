@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 20px 20px;
+}
+
+.label {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.input {
+  display: block;
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+  font-size: 23px;
+}
+
+.input:hover,
+.input:focus {
+  outline: 1px solid rgb(90, 170, 221);
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(147, 147, 162, 0.705);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(24, 24, 112);
+  color: bisque;
+}

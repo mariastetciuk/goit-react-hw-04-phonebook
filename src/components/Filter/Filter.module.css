@@ -1,0 +1,22 @@
+.label {
+  margin-bottom: 30px;
+  font-size: 23px;
+  font-weight: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.input {
+  display: block;
+  width: 500px;
+  height: 30px;
+  padding: 5px;
+  font-size: 23px;
+}
+
+.input:hover,
+.input:focus {
+  outline: 1px solid rgb(90, 170, 221);
+}

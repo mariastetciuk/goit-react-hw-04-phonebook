@@ -1,0 +1,31 @@
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contacts__item {
+  /* display: flex; */
+  align-items: center;
+  font-size: 25px;
+  gap: 10px;
+}
+.contacts__span {
+  margin-right: 10px;
+}
+
+.contacts__btn {
+  border: 1px solid gray;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__btn:hover,
+.contacts__btn:focus {
+  background-color: rgb(216, 79, 25);
+  color: rgba(225, 227, 237, 0.761);
+}

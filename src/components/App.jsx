@@ -5,14 +5,14 @@ import { Filter } from './Filter/Filter';
 import css from './App.module.css';
 
 export const App = () => {
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState(
+    JSON.parse(localStorage.getItem('contacts')) || []
+  );
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
     const localeStorageData = JSON.parse(localStorage.getItem('contacts'));
-    if (localeStorageData) {
-      setContacts(() => [...localeStorageData]);
-    }
+    setContacts(() => [...localeStorageData]);
   }, []);
 
   useEffect(() => {
